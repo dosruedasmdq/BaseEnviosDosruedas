@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-delivery",
+      "description": "Professional delivery motorcycle in the city",
+      "imageUrl": "https://picsum.photos/seed/delivery1/1200/800",
+      "imageHint": "delivery motorcycle"
+    },
+    {
+      "id": "service-fast",
+      "description": "Fast express shipping icon/image",
+      "imageUrl": "https://picsum.photos/seed/fast/600/400",
+      "imageHint": "fast shipping"
+    },
+    {
+      "id": "service-secure",
+      "description": "Secure package handling",
+      "imageUrl": "https://picsum.photos/seed/secure/600/400",
+      "imageHint": "secure package"
+    },
+    {
+      "id": "service-track",
+      "description": "Real-time tracking interface on phone",
+      "imageUrl": "https://picsum.photos/seed/track/600/400",
+      "imageHint": "mobile tracking"
+    }
+  ]
 }
