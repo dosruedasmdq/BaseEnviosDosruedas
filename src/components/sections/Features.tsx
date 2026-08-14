@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Bike, ShieldCheck, Clock, Globe } from "lucide-react";
@@ -36,7 +35,7 @@ export function Features() {
     <section className="py-24 bg-muted/30">
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col items-center text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-6xl font-headline tracking-tighter text-primary uppercase">
+          <h2 className="text-4xl md:text-6xl font-display tracking-tighter text-primary uppercase">
             Nuestros <span className="text-secondary-foreground underline decoration-secondary">Servicios</span>
           </h2>
           <p className="max-w-[700px] text-muted-foreground md:text-lg font-body">
@@ -50,7 +49,7 @@ export function Features() {
                 <div className={`${feature.color} w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
                   <feature.icon className="h-7 w-7" />
                 </div>
-                <h3 className="text-2xl font-bold text-primary">{feature.title}</h3>
+                <h3 className="text-2xl font-bold text-primary font-display uppercase tracking-tight">{feature.title}</h3>
                 <p className="text-muted-foreground font-body leading-relaxed">
                   {feature.description}
                 </p>

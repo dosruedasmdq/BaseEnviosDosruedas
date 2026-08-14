@@ -1,4 +1,3 @@
-
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
@@ -18,7 +17,7 @@ export default function Home() {
         <section className="py-24 bg-primary text-primary-foreground overflow-hidden relative">
           <div className="container px-4 md:px-6 mx-auto relative z-10">
             <div className="max-w-3xl space-y-8">
-              <h2 className="text-5xl md:text-7xl font-headline tracking-tighter uppercase leading-none">
+              <h2 className="text-5xl md:text-7xl font-display tracking-tighter uppercase leading-none">
                 ¿Listo para enviar <br />
                 con <span className="text-secondary">Los Mejores?</span>
               </h2>

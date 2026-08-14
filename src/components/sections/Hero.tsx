@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Input } from "@/components/ui/input";
@@ -16,7 +15,7 @@ export function Hero() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline leading-none text-primary uppercase tracking-tighter">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-display leading-none text-primary uppercase tracking-tighter">
                 Velocidad en <br />
                 <span className="text-secondary bg-primary px-2 inline-block -rotate-1">Cada Kilómetro</span>
               </h1>
@@ -26,24 +25,24 @@ export function Hero() {
             </div>
             
             <div className="max-w-md mx-auto lg:mx-0 bg-card border shadow-2xl rounded-2xl p-6 space-y-4">
-              <h3 className="text-xl font-bold flex items-center gap-2">
+              <h3 className="text-xl font-bold flex items-center gap-2 font-display uppercase">
                 <Search className="h-5 w-5 text-primary" /> Rastrear Envío
               </h3>
               <div className="flex gap-2">
                 <Input placeholder="Ingresa tu número de guía..." className="h-12 bg-muted/50 border-none" />
-                <Button className="h-12 px-6 font-bold uppercase tracking-wide">Buscar</Button>
+                <Button className="h-12 px-6 font-subheading text-lg uppercase tracking-wide">Buscar</Button>
               </div>
             </div>
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-8 opacity-70 grayscale">
               <div className="flex items-center gap-2">
-                <Package className="h-5 w-5" /> <span className="text-sm font-semibold uppercase">+1M Envíos</span>
+                <Package className="h-5 w-5" /> <span className="text-sm font-subheading uppercase">+1M Envíos</span>
               </div>
               <div className="flex items-center gap-2">
-                <MapPin className="h-5 w-5" /> <span className="text-sm font-semibold uppercase">Cobertura Total</span>
+                <MapPin className="h-5 w-5" /> <span className="text-sm font-subheading uppercase">Cobertura Total</span>
               </div>
               <div className="flex items-center gap-2">
-                <FastForward className="h-5 w-5" /> <span className="text-sm font-semibold uppercase">Express 24h</span>
+                <FastForward className="h-5 w-5" /> <span className="text-sm font-subheading uppercase">Express 24h</span>
               </div>
             </div>
           </div>
@@ -61,7 +60,7 @@ export function Hero() {
              )}
              <div className="absolute inset-0 bg-primary/10 mix-blend-multiply" />
              <div className="absolute bottom-8 left-8 bg-secondary text-primary px-6 py-4 rounded-xl shadow-xl border-l-8 border-primary">
-                <p className="font-headline text-3xl leading-none uppercase">Entregas en <br/> <span className="text-primary-foreground bg-primary px-1">Menos de 60m</span></p>
+                <p className="font-display text-3xl leading-none uppercase">Entregas en <br/> <span className="text-primary-foreground bg-primary px-1">Menos de 60m</span></p>
              </div>
           </div>
         </div>
