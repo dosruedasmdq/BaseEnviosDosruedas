@@ -1,83 +1,83 @@
-
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Bike, Send, Package, MapPin, Phone } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 export default function LibraryPage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-white">
       <Navbar />
       <main className="flex-grow container px-4 md:px-6 py-12 mx-auto">
-        <div className="space-y-4 mb-12">
-          <h1 className="text-6xl font-headline text-primary uppercase tracking-tighter">Librería de Componentes</h1>
-          <p className="text-muted-foreground font-body">Componentes base estilizados para Envios Dosruedas.</p>
+        <div className="space-y-4 mb-12 border-l-8 border-brand-yellow pl-6">
+          <h1 className="text-7xl font-display text-brand-blue uppercase leading-none">Librería de Componentes</h1>
+          <p className="text-muted-foreground font-body text-lg">Sistema de diseño oficial para Envios Dosruedas.</p>
         </div>
 
-        <div className="grid gap-16">
-          {/* Buttons Section */}
+        <div className="grid gap-20">
+          {/* Typography Section */}
           <section className="space-y-8">
-            <h2 className="text-3xl font-headline uppercase border-b pb-2">Botones</h2>
-            <div className="flex flex-wrap gap-4 items-center">
-              <Button>Primary Button</Button>
-              <Button variant="secondary">Secondary Button</Button>
-              <Button variant="outline">Outline Button</Button>
-              <Button variant="ghost">Ghost Button</Button>
-              <Button size="lg" className="h-14 px-8 font-bold uppercase tracking-widest">Large Action</Button>
+            <h2 className="text-4xl font-display text-brand-blue border-b-2 border-brand-yellow pb-2">Tipografía</h2>
+            <div className="space-y-6">
+              <div>
+                <span className="text-xs font-subheading text-muted-foreground block mb-1">Display (Anton SC)</span>
+                <p className="text-6xl font-display text-brand-blue uppercase">Velocidad Extrema</p>
+              </div>
+              <div>
+                <span className="text-xs font-subheading text-muted-foreground block mb-1">Subheading (Bebas Neue)</span>
+                <p className="text-4xl font-subheading text-brand-blue">Mensajería Express Urbana</p>
+              </div>
+              <div>
+                <span className="text-xs font-subheading text-muted-foreground block mb-1">Body (Outfit)</span>
+                <p className="text-lg font-body max-w-2xl">
+                  Nuestra red logística está diseñada para ofrecer la máxima eficiencia en cada entrega, 
+                  garantizando que tus paquetes lleguen a su destino de forma segura y en tiempo récord.
+                </p>
+              </div>
             </div>
           </section>
 
-          {/* Inputs Section */}
+          {/* Buttons Section */}
           <section className="space-y-8">
-            <h2 className="text-3xl font-headline uppercase border-b pb-2">Entradas de Texto</h2>
-            <div className="grid gap-6 max-w-2xl">
-              <div className="space-y-2">
-                <label className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Dirección de Recogida</label>
-                <div className="relative">
-                  <MapPin className="absolute left-3 top-3 h-4 w-4 text-primary" />
-                  <Input placeholder="Ej: Calle 10 # 5-20" className="pl-10 h-12" />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Teléfono</label>
-                <div className="relative">
-                  <Phone className="absolute left-3 top-3 h-4 w-4 text-primary" />
-                  <Input placeholder="+57 300 000 0000" className="pl-10 h-12" />
-                </div>
-              </div>
+            <h2 className="text-4xl font-display text-brand-blue border-b-2 border-brand-yellow pb-2">Botones de Acción</h2>
+            <div className="flex flex-wrap gap-6 items-center">
+              <Button size="lg" className="h-14 px-10 font-subheading text-xl uppercase tracking-widest shadow-xl">Solicitar Envío</Button>
+              <Button variant="secondary" size="lg" className="h-14 px-10 font-subheading text-xl uppercase tracking-widest border-2 border-brand-blue shadow-lg">Ver Tarifas</Button>
+              <Button variant="outline" className="font-subheading text-lg">Rastrear Guía</Button>
+              <Badge className="font-subheading py-1 px-4 text-sm bg-brand-yellow text-brand-blue border-none">Express 60m</Badge>
             </div>
           </section>
 
           {/* Cards Section */}
           <section className="space-y-8">
-            <h2 className="text-3xl font-headline uppercase border-b pb-2">Tarjetas Informativas</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card className="shadow-lg border-none">
-                <CardHeader className="bg-primary text-primary-foreground p-6">
-                  <div className="bg-secondary/20 p-2 rounded-lg w-fit mb-4">
-                    <Package className="h-6 w-6 text-secondary" />
+            <h2 className="text-4xl font-display text-brand-blue border-b-2 border-brand-yellow pb-2">Tarjetas de Servicio</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="shadow-2xl border-none overflow-hidden group">
+                <CardHeader className="bg-brand-blue text-white p-8">
+                  <div className="bg-brand-yellow p-3 rounded-xl w-fit mb-4">
+                    <Bike className="h-8 w-8 text-brand-blue" />
                   </div>
-                  <CardTitle className="font-headline uppercase text-2xl">Básico</CardTitle>
+                  <CardTitle className="font-display text-3xl uppercase">Mensajería Urbana</CardTitle>
                 </CardHeader>
-                <CardContent className="p-6">
-                  <p className="text-muted-foreground mb-6">Ideal para documentos y paquetes pequeños de hasta 1kg.</p>
-                  <div className="text-3xl font-bold text-primary">$8.500 COP</div>
+                <CardContent className="p-8">
+                  <p className="text-muted-foreground font-body text-lg mb-6">Entregas locales en menos de 90 minutos con rastreo en tiempo real.</p>
+                  <div className="text-4xl font-display text-brand-blue leading-none">$8.500 <span className="text-sm font-subheading">COP</span></div>
                 </CardContent>
               </Card>
-              
-              <Card className="shadow-xl border-2 border-secondary overflow-hidden relative">
-                <div className="bg-secondary text-primary text-[10px] font-bold uppercase tracking-widest py-1 text-center absolute top-0 w-full">Más Popular</div>
-                <CardHeader className="p-6 pt-10">
-                  <div className="bg-primary/10 p-2 rounded-lg w-fit mb-4">
-                    <Bike className="h-6 w-6 text-primary" />
+
+              <Card className="shadow-2xl border-4 border-brand-yellow overflow-hidden relative">
+                <div className="bg-brand-yellow text-brand-blue text-xs font-subheading py-1 text-center absolute top-0 w-full uppercase tracking-tighter">Servicio Recomendado</div>
+                <CardHeader className="p-8 pt-12">
+                  <div className="bg-brand-blue/10 p-3 rounded-xl w-fit mb-4">
+                    <Package className="h-8 w-8 text-brand-blue" />
                   </div>
-                  <CardTitle className="font-headline uppercase text-2xl text-primary">Estándar</CardTitle>
+                  <CardTitle className="font-display text-3xl text-brand-blue uppercase">E-commerce Flex</CardTitle>
                 </CardHeader>
-                <CardContent className="p-6">
-                  <p className="text-muted-foreground mb-6">Entrega en menos de 90 minutos para paquetes hasta 5kg.</p>
-                  <div className="text-3xl font-bold text-primary">$12.500 COP</div>
+                <CardContent className="p-8">
+                  <p className="text-muted-foreground font-body text-lg mb-6">Solución integral para tiendas online con recolección programada diaria.</p>
+                  <div className="text-4xl font-display text-brand-blue leading-none">$12.500 <span className="text-sm font-subheading">COP</span></div>
                 </CardContent>
               </Card>
             </div>
