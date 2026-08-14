@@ -123,19 +123,21 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center group">
+        {/* Logo and Brand Name */}
+        <Link href="/" className="flex items-center gap-3 group">
           {!logoError && (
             <Image
               src="/logo_envios.webp"
-              alt="Envíos DosRuedas"
-              width={160}
+              alt="Logo Envios Dosruedas"
+              width={48}
               height={48}
-              style={{ width: 'auto' }}
-              className="h-12 w-auto object-contain transition-transform group-hover:scale-105"
+              className="h-10 w-auto object-contain transition-transform group-hover:scale-110"
               onError={() => setLogoError(true)}
             />
           )}
+          <span className="font-display text-2xl sm:text-3xl tracking-tighter uppercase text-white leading-none">
+            Envios <span className="text-secondary">Dosruedas</span>
+          </span>
         </Link>
 
         {/* Desktop Nav */}
