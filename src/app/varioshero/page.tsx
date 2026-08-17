@@ -1,10 +1,10 @@
-
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { HeroContact } from "@/components/sections/HeroContact";
 import { Hero } from "@/components/heros/Hero";
 import { Hero2 } from "@/components/heros/Hero2";
 import { HeroSynthEra } from "@/components/heros/HeroSynthEra";
+import HeroCotizar from "@/components/heros/HeroCotizar";
 import { Badge } from "@/components/ui/badge";
 
 export default function VariosHeroPage() {
@@ -34,17 +34,28 @@ export default function VariosHeroPage() {
           <div className="space-y-12">
             <div className="flex items-center gap-4 border-b border-brand-blue/10 pb-4">
               <span className="text-5xl font-display text-brand-blue/20">01</span>
-              <h2 className="text-2xl font-subheading text-brand-blue uppercase tracking-widest">Hub de Contacto - Blue Minimal</h2>
+              <h2 className="text-2xl font-subheading text-brand-blue uppercase tracking-widest">Hub de Contacto - Rejouice Style</h2>
             </div>
             <div className="bg-slate-50 p-4 md:p-12 rounded-[3rem] border shadow-inner">
               <HeroContact />
             </div>
           </div>
 
-          {/* Opción 02: Synth Era - Cinematic */}
+          {/* Opción 02: Cotizador al Instante */}
           <div className="space-y-12">
             <div className="flex items-center gap-4 border-b border-brand-blue/10 pb-4">
               <span className="text-5xl font-display text-brand-blue/20">02</span>
+              <h2 className="text-2xl font-subheading text-brand-blue uppercase tracking-widest">Cotizador al Instante - Blue Dark</h2>
+            </div>
+            <div className="rounded-[3rem] overflow-hidden border-8 border-brand-blue/5 shadow-2xl">
+              <HeroCotizar />
+            </div>
+          </div>
+
+          {/* Opción 03: Synth Era - Cinematic */}
+          <div className="space-y-12">
+            <div className="flex items-center gap-4 border-b border-brand-blue/10 pb-4">
+              <span className="text-5xl font-display text-brand-blue/20">03</span>
               <h2 className="text-2xl font-subheading text-brand-blue uppercase tracking-widest">Synth Era - Cinematic Blue</h2>
             </div>
             <div className="rounded-[3rem] overflow-hidden border-8 border-brand-blue/5 shadow-2xl">
@@ -52,10 +63,10 @@ export default function VariosHeroPage() {
             </div>
           </div>
 
-          {/* Opción 03: Dynamic MDQ - Hero 2 */}
+          {/* Opción 04: Dynamic MDQ - Hero 2 */}
           <div className="space-y-12">
             <div className="flex items-center gap-4 border-b border-brand-blue/10 pb-4">
-              <span className="text-5xl font-display text-brand-blue/20">03</span>
+              <span className="text-5xl font-display text-brand-blue/20">04</span>
               <h2 className="text-2xl font-subheading text-brand-blue uppercase tracking-widest">Dynamic MDQ - Hero 2</h2>
             </div>
             <div className="rounded-[3rem] overflow-hidden border-8 border-brand-blue/5 shadow-2xl">
@@ -63,10 +74,10 @@ export default function VariosHeroPage() {
             </div>
           </div>
 
-          {/* Opción 04: Estándar Corporativo - Hero Clásico */}
+          {/* Opción 05: Estándar Corporativo - Hero Clásico */}
           <div className="space-y-12">
             <div className="flex items-center gap-4 border-b border-brand-blue/10 pb-4">
-              <span className="text-5xl font-display text-brand-blue/20">04</span>
+              <span className="text-5xl font-display text-brand-blue/20">05</span>
               <h2 className="text-2xl font-subheading text-brand-blue uppercase tracking-widest">Estándar Corporativo - Hero Clásico</h2>
             </div>
             <div className="rounded-[3rem] overflow-hidden border border-slate-100 shadow-xl bg-slate-50/50">
