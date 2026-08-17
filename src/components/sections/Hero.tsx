@@ -1,8 +1,6 @@
 "use client";
 
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Search, Package, MapPin, FastForward } from "lucide-react";
+import { Package, MapPin, FastForward } from "lucide-react";
 import Image from "next/image";
 
 export function Hero() {
@@ -22,16 +20,6 @@ export function Hero() {
               </p>
             </div>
             
-            <div className="max-w-md mx-auto lg:mx-0 bg-card border shadow-2xl rounded-2xl p-6 space-y-4">
-              <h3 className="text-xl font-bold flex items-center gap-2 font-headline uppercase text-primary">
-                <Search className="h-5 w-5" /> Rastrear Envío
-              </h3>
-              <div className="flex gap-2">
-                <Input placeholder="Ingresa tu número de guía..." className="h-12 bg-muted/50 border-none font-body" />
-                <Button className="h-12 px-6 font-subheading text-lg uppercase tracking-wide">Buscar</Button>
-              </div>
-            </div>
-
             <div className="flex flex-wrap justify-center lg:justify-start gap-8 opacity-70 grayscale">
               <div className="flex items-center gap-2">
                 <Package className="h-5 w-5" /> <span className="text-sm font-subheading uppercase">+1M Envíos</span>
