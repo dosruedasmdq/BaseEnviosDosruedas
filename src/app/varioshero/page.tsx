@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { HeroContact } from "@/components/sections/HeroContact";
 import { Hero } from "@/components/heros/Hero";
 import { Hero2 } from "@/components/heros/Hero2";
+import { Hero3 } from "@/components/heros/Hero3";
 import { HeroSynthEra } from "@/components/heros/HeroSynthEra";
 import HeroCotizar from "@/components/heros/HeroCotizar";
 import { Badge } from "@/components/ui/badge";
@@ -74,10 +75,21 @@ export default function VariosHeroPage() {
             </div>
           </div>
 
-          {/* Opción 05: Estándar Corporativo - Hero Clásico */}
+          {/* Opción 05: Contacto Express - Hero 3 */}
           <div className="space-y-12">
             <div className="flex items-center gap-4 border-b border-brand-blue/10 pb-4">
               <span className="text-5xl font-display text-brand-blue/20">05</span>
+              <h2 className="text-2xl font-subheading text-brand-blue uppercase tracking-widest">Contacto Express - Hero 3</h2>
+            </div>
+            <div className="rounded-[3rem] overflow-hidden border-8 border-brand-blue/5 shadow-2xl">
+              <Hero3 />
+            </div>
+          </div>
+
+          {/* Opción 06: Estándar Corporativo - Hero Clásico */}
+          <div className="space-y-12">
+            <div className="flex items-center gap-4 border-b border-brand-blue/10 pb-4">
+              <span className="text-5xl font-display text-brand-blue/20">06</span>
               <h2 className="text-2xl font-subheading text-brand-blue uppercase tracking-widest">Estándar Corporativo - Hero Clásico</h2>
             </div>
             <div className="rounded-[3rem] overflow-hidden border border-slate-100 shadow-xl bg-slate-50/50">
