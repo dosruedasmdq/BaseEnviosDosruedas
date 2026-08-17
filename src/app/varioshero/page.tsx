@@ -2,6 +2,9 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { HeroContact } from "@/components/sections/HeroContact";
+import { Hero } from "@/components/heros/Hero";
+import { Hero2 } from "@/components/heros/Hero2";
+import { HeroSynthEra } from "@/components/heros/HeroSynthEra";
 import { Badge } from "@/components/ui/badge";
 
 export default function VariosHeroPage() {
@@ -10,7 +13,7 @@ export default function VariosHeroPage() {
       <Navbar />
       
       <main className="flex-grow pt-32 pb-24">
-        <div className="container px-4 md:px-6 mx-auto space-y-24">
+        <div className="container px-4 md:px-6 mx-auto space-y-32">
           
           {/* Header de la Galería */}
           <div className="max-w-3xl space-y-4">
@@ -23,27 +26,51 @@ export default function VariosHeroPage() {
             </h1>
             <p className="text-xl text-muted-foreground font-body max-w-xl pt-4">
               Exploración de interfaces disruptivas para la marca Envios Dosruedas. 
-              Enfoque en tipografía monumental y legibilidad premium.
+              Enfoque en tipografía monumental, animaciones fluidas y legibilidad premium.
             </p>
           </div>
 
-          {/* Opción 1: Hero Contacto Disruptivo */}
-          <div className="space-y-8">
+          {/* Opción 01: Hub de Contacto Disruptivo */}
+          <div className="space-y-12">
             <div className="flex items-center gap-4 border-b border-brand-blue/10 pb-4">
               <span className="text-5xl font-display text-brand-blue/20">01</span>
               <h2 className="text-2xl font-subheading text-brand-blue uppercase tracking-widest">Hub de Contacto - Blue Minimal</h2>
             </div>
-            <HeroContact />
+            <div className="bg-slate-50 p-4 md:p-12 rounded-[3rem] border shadow-inner">
+              <HeroContact />
+            </div>
           </div>
 
-          {/* Aquí se pueden añadir más opciones de Hero siguiendo el mismo patrón */}
-          <div className="space-y-8 opacity-40 grayscale pointer-events-none">
-             <div className="flex items-center gap-4 border-b border-brand-blue/10 pb-4">
+          {/* Opción 02: Synth Era - Cinematic */}
+          <div className="space-y-12">
+            <div className="flex items-center gap-4 border-b border-brand-blue/10 pb-4">
               <span className="text-5xl font-display text-brand-blue/20">02</span>
-              <h2 className="text-2xl font-subheading text-brand-blue uppercase tracking-widest">Próxima Variante - En desarrollo</h2>
+              <h2 className="text-2xl font-subheading text-brand-blue uppercase tracking-widest">Synth Era - Cinematic Blue</h2>
             </div>
-            <div className="h-[400px] w-full rounded-[2.5rem] bg-muted flex items-center justify-center border-2 border-dashed">
-              <p className="font-subheading text-muted-foreground">Nueva propuesta próximamente</p>
+            <div className="rounded-[3rem] overflow-hidden border-8 border-brand-blue/5 shadow-2xl">
+              <HeroSynthEra />
+            </div>
+          </div>
+
+          {/* Opción 03: Dynamic MDQ - Hero 2 */}
+          <div className="space-y-12">
+            <div className="flex items-center gap-4 border-b border-brand-blue/10 pb-4">
+              <span className="text-5xl font-display text-brand-blue/20">03</span>
+              <h2 className="text-2xl font-subheading text-brand-blue uppercase tracking-widest">Dynamic MDQ - Hero 2</h2>
+            </div>
+            <div className="rounded-[3rem] overflow-hidden border-8 border-brand-blue/5 shadow-2xl">
+              <Hero2 />
+            </div>
+          </div>
+
+          {/* Opción 04: Estándar Corporativo - Hero Clásico */}
+          <div className="space-y-12">
+            <div className="flex items-center gap-4 border-b border-brand-blue/10 pb-4">
+              <span className="text-5xl font-display text-brand-blue/20">04</span>
+              <h2 className="text-2xl font-subheading text-brand-blue uppercase tracking-widest">Estándar Corporativo - Hero Clásico</h2>
+            </div>
+            <div className="rounded-[3rem] overflow-hidden border border-slate-100 shadow-xl bg-slate-50/50">
+              <Hero />
             </div>
           </div>
 
